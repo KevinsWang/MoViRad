@@ -1,0 +1,59 @@
+\documentclass[11pt]{article}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{indentfirst}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{setspace}
+\usepackage{cite}
+\usepackage[cmex10]{amsmath}
+\interdisplaylinepenalty=2500 
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{pgfplots}
+\usepackage{multirow}
+\usepackage{hyperref}
+\hypersetup{colorlinks,urlcolor=blue}
+\usepackage{tikz}
+\usepackage[americaninductors,americanresistors]{circuitikz}
+\usepackage{listings}
+\usetikzlibrary{shapes,arrows,positioning}
+\usepackage{verbatim}
+\usepackage[top=0.2in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{setspace}
+\singlespacing
+\graphicspath{{figures/}}
+\pgfplotsset{width=7cm,compat=newest}
+
+\def\width{12}
+\def\height{4}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+
+\lstset{language=Matlab,
+   keywords={break,case,catch,continue,else,elseif,end,equal,for,function,
+      global,if,otherwise,persistent,return,switch,try,while},
+   basicstyle=\ttfamily\footnotesize,
+   keywordstyle=\color{blue},
+   commentstyle=\color{dkgreen},
+   stringstyle=\color{Plum},
+   %numbers=left,
+   numberstyle=\tiny\color{gray},
+   stepnumber=1,
+   numbersep=10pt,
+   backgroundcolor=\color{white},
+   tabsize=4,
+   showspaces=false,
+   showstringspaces=false,
+   xleftmargin=-1in}
+
+   \newcommand {\mtrx} [2] {
+      $\left [ {
+         \begin {array} {*{#1}c}
+            #2
+         \end {array}
+         }  \right ]$
+   }
+
+\newcommand{\me}{\mathrm{e}}
